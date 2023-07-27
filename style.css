@@ -1,0 +1,273 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html
+{
+    
+    scroll-behavior: smooth;
+}
+
+body
+{
+
+    background-color: #1f242d;
+    color: #fff;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+
+}
+main{
+    margin: 15px;
+}
+
+
+.logo
+{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+
+}
+
+.nav-bar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+
+}
+
+.nav-bar a:hover,
+.nav-bar a.active
+{
+    color: aqua;
+}
+
+.home
+
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 70px 10% 0  ;
+    margin: 30px;
+
+}
+.home-cont
+{
+    max-width: 600px;
+}
+.main-img
+{
+    max-width: 500px;
+
+
+}
+
+.home-cont h3{
+    font-size: 32px;
+    font-weight: 700;
+
+
+}
+
+.home-cont h3 span
+{
+    color:aqua;
+}
+
+.home-cont h1{
+    font-size: 56px;
+    font-weight: 700;
+
+
+}
+.home-cont h3:nth-of-type(2)
+{
+    margin-bottom: 30px;
+}
+
+.teja-img{
+
+    border:10px solid rgba(225,225,225,0.5);
+    width: 400px;
+    margin: 50px;
+
+}
+
+.social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+
+
+}
+
+.social a:hover
+{
+    background: aqua;
+    color: #1f242d;
+}
+
+
+
+
+
+
+#about
+{
+    padding: 80px 0;
+    color: #fff;
+    margin-bottom: 150px;
+
+}
+
+.container
+{
+    height: 850px;    
+}
+
+.about-name,.title
+{
+    font-size: 60px;
+    font-weight: 600px;
+
+    
+}
+
+.tab-titles
+{
+    display:  flex;
+    margin: 20px 0 40px  ;
+
+}
+
+.tab-link
+{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 650;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5S;
+}
+
+.tab-link.active-link::after
+{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin:10px 0 ;
+    color: #FFF;
+    font-weight: 700;
+}
+.tab-contents ul li span{
+    color: aqua;
+}
+.tab-contents
+{
+    display: none;
+}
+
+.tab-contents.active-tab
+{
+    display: block;
+}
+
+.contact
+{
+    height: 550px;
+    margin-right: 50px;
+}
+
+.contact p,div
+{
+    margin: 30px;
+    font-size: 26px;
+}
+
+
+.certi
+{
+    width: 100px;
+    margin:30px;
+    border: 2px solid #fff;
+}
+
+@media screen and (max-width:1000px) {
+    
+.home-cont h3{
+    font-size: 22px;
+    font-weight: 700;
+
+
+}
+
+
+.home-cont h1{
+    font-size: 36px;
+    width: 250px;
+    
+}
+
+.main-img
+{
+    width: 50px;
+
+
+}
+
+.dis
+{
+    width: 650px;
+    font-size: 1rem;
+}
+
+.about-name,.contact-name
+{
+    font-size: 2rem;
+}
+
+}
